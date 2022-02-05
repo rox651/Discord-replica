@@ -565,7 +565,7 @@ body{
 }
 @media screen and (min-width:1200px) {
     .dc-section-container{
-        padding: 200px 250px;
+        padding: 200px 50px;
     }
     .dc-hero-buttons{
         flex-direction: row;
