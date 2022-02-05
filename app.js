@@ -13,3 +13,25 @@ bars.addEventListener('click',function(){
 })
 
 
+
+
+const sections = document.querySelectorAll('.dc-section-container')
+const aside = document.querySelector('.dc-aside-container')
+
+const cargarImagen = (entradas)=>{
+    entradas.forEach(entrada => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add('visible')
+        }
+    });
+};
+const observador = new IntersectionObserver(cargarImagen,{
+    root: null,
+    threshold: 0.3
+    })
+
+sections.forEach(section =>{
+    observador.observe(section)
+})
+
+observador.observe(aside)
