@@ -35,3 +35,24 @@ sections.forEach(section =>{
 })
 
 observador.observe(aside)
+
+
+const buttonOpenDiscordFirst = document.querySelector('.dc-header-button')
+const buttonOpenDiscordLast = document.getElementById('button-nav')
+const buttonDownloadFirst = document.getElementById('button-hero')
+const buttonDownloadLast = document.querySelector('.dc-aside-download--button')
+
+
+function donwloadFun(){
+    return window.location.href = "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
+}
+
+function openDiscord(){
+    return window.location.href = "https://discord.com/login"
+}
+
+
+buttonOpenDiscordFirst.addEventListener('click',openDiscord)
+buttonOpenDiscordLast.addEventListener('click',openDiscord)
+buttonDownloadLast.addEventListener('click',donwloadFun)
+buttonDownloadFirst.addEventListener('click',donwloadFun)
