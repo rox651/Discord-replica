@@ -21,10 +21,14 @@
     src: url(fonts/whitneymedium.otf);
 }
 
+.max-ctn{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 body{
     background-color: var(--backgroundHero);
     font-family: Whitney;
-
+    overflow-x: hidden;
 }
 
 @media screen and (min-width:300px) {
@@ -123,6 +127,8 @@ body{
     /* hero */
 
     .dc-hero{
+        max-width: 1400px;
+        margin: 0 auto;
         margin-top: 50px;
         font-family: Ginto;
         display: grid;
@@ -130,7 +136,7 @@ body{
         padding: 10px;
         color: #fff;
         position: relative;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .dc-hero-container{
@@ -486,6 +492,7 @@ body{
         margin-top: 100px;
         background-size: cover;
         background-position: center;
+        overflow: visible;
     }
     .dc-hero-container{
         grid-column: 1/-1;
@@ -506,10 +513,6 @@ body{
         margin-bottom: 180px;
 
     }
-    .dc-hero-buttons-button{
-        width: 100%;
-        max-width: none;
-    }
     .dc-hero-img{
         right: 0;
         width: 100%;      
@@ -523,7 +526,7 @@ body{
     .dc-hero-img img{
         width: 60%;
         position: relative;
-        margin: -25px 0;
+        bottom: -10px;
       
     }
     .dc-hero-img img:first-child{
