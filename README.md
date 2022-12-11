@@ -5,7 +5,7 @@ Puedes usar microfono, camara, y un chat que te proporcione las herramientas nec
 📞🕹
   
 He realizado una réplica casi exacta sobre la página principal.
-👉 Link:
+👉 Link: https://discord-replic.netlify.app
 
 
 ![image](https://user-images.githubusercontent.com/96498455/153783393-52fdff7c-6e1c-4b71-a8a8-9228ad89ef61.png)
